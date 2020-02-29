@@ -1,3 +1,11 @@
+import React from 'react';
+import { View } from 'react-native';
+import {
+  FontAwesome,
+  MaterialIcons,
+  MaterialCommunityIcons
+} from '@expo/vector-icons';
+
 export function getMetricMetaInfo(metric) {
   const info = {
     run: {
@@ -8,8 +16,8 @@ export function getMetricMetaInfo(metric) {
       type: 'steppers',
       getIcon() {
         return (
-          <View style={[styles.iconContainer, { backgroundColor: red }]}>
-            <MaterialIcons name="directions-run" color={white} size={35} />
+          <View>
+            <MaterialIcons name="directions-run" color={'black'} size={35} />
           </View>
         );
       }
@@ -22,8 +30,8 @@ export function getMetricMetaInfo(metric) {
       type: 'steppers',
       getIcon() {
         return (
-          <View style={[styles.iconContainer, { backgroundColor: orange }]}>
-            <MaterialCommunityIcons name="bike" color={white} size={32} />
+          <View>
+            <MaterialCommunityIcons name="bike" color={'black'} size={32} />
           </View>
         );
       }
@@ -36,8 +44,8 @@ export function getMetricMetaInfo(metric) {
       type: 'steppers',
       getIcon() {
         return (
-          <View style={[styles.iconContainer, { backgroundColor: blue }]}>
-            <MaterialCommunityIcons name="swim" color={white} size={35} />
+          <View>
+            <MaterialCommunityIcons name="swim" color={'black'} size={35} />
           </View>
         );
       }
@@ -50,8 +58,8 @@ export function getMetricMetaInfo(metric) {
       type: 'slider',
       getIcon() {
         return (
-          <View style={[styles.iconContainer, { backgroundColor: lightPurp }]}>
-            <FontAwesome name="bed" color={white} size={30} />
+          <View>
+            <FontAwesome name="bed" color={'black'} size={30} />
           </View>
         );
       }
@@ -64,8 +72,8 @@ export function getMetricMetaInfo(metric) {
       type: 'slider',
       getIcon() {
         return (
-          <View style={[styles.iconContainer, { backgroundColor: pink }]}>
-            <MaterialCommunityIcons name="food" color={white} size={35} />
+          <View>
+            <MaterialCommunityIcons name="food" color={'black'} size={35} />
           </View>
         );
       }
